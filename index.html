@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Frontend Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <p class="header-sub">FRONTEND PORTFOLIO</p>
+    </div>
+    <nav class="header-nav">
+      <a href="#hero">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECT</a>
+      <a href="#resume">이력서</a>
+      <a href="#coverletter">자기소개서</a>
+    </nav>
+  </header>
+<div class="print-bar fade-up">
+  <button onclick="printAll()">이력서 · 자기소개서 출력하기</button>
+</div>
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-top-label">
+        <span class="line"></span>
+        <span class="text">FRONTEND PORTFOLIO</span>
+        <span class="line"></span>
+      </div>
+
+      <div class="hero-name">
+        <span class="hero-first">CHOI</span>
+        <span class="hero-last">HANEUL</span>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <span class="scroll-text">SCROLL</span>
+        <span class="scroll-arrow">⌄</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <section id="about" class="section section-about fade-up">
+      <div class="section-title-row">
+        <span class="section-title-en">ABOUT ME</span>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-left">
+          <h2 class="about-heading">
+            안녕하세요,<br />
+            프론트엔드 개발자<br />
+            <span>최하늘</span>입니다.
+          </h2>
+
+          <p class="about-text">기술적인 도전에 즐거움을 느끼며, 사용자 경험을 중요하게 생각합니다.</p>
+          <p class="about-text">직관적이고 깔끔한 UI 개발을 좋아하며 성장하는 과정에 큰 보람을 느낍니다.</p>
+          <p class="about-text">협업과 커뮤니케이션을 통해 더 나은 서비스를 만드는 개발자입니다.</p>
+        </div>
+
+        <div class="about-info-card">
+          <div class="about-info-left">
+            <p class="about-name-ko">최하늘</p>
+            <p class="about-name-en">CHOI HANEUL</p>
+            <span class="about-role-badge">Front-End Developer</span>
+
+            <ul class="about-contact-list">
+              <li>
+                <span class="icon">✉</span>
+                <a href="mailto:zz3704@naver.com">zz3704@naver.com</a>
+              </li>
+              <li>
+                <span class="icon">☎</span>
+                <span>010-4930-3704</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-info-photo photo-size">
+            <img src="profile.png" alt="프로필 사진">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-skills fade-up">
+      <div class="section-title-row">
+        <span class="section-title-en">SKILLS</span>
+      </div>
+
+      
+      <div class="skills-group fade-up">
+        <h3 class="skills-title">LANGUAGES</h3>
+
+        <div class="skills-grid">
+          <article class="skill-card skill-row">
+            <div class="photo-size"><img src="html.png" alt="HTML 아이콘"></div>
+            <div class="skill-text-block"><h4>HTML</h4><p>웹 문서의 구조를 설계하고 마크업할 수 있습니다.</p></div>
+          </article>
+
+          <article class="skill-card skill-row">
+            <div class="photo-size"><img src="css.png" alt="CSS 아이콘"></div>
+            <div class="skill-text-block"><h4>CSS</h4><p>반응형·애니메이션 기반 UI 스타일링이 가능합니다.</p></div>
+          </article>
+
+          <article class="skill-card skill-row">
+            <div class="photo-size"><img src="js.png" alt="JavaScript 아이콘"></div>
+            <div class="skill-text-block"><h4>JavaScript</h4><p>DOM 조작, 이벤트 처리, 비동기 통신 구현이 가능합니다.</p></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="skills-group fade-up">
+        <h3 class="skills-title">MAIN STACK</h3>
+
+        <div class="skills-grid">
+          <article class="skill-card skill-row">
+            <div class="photo-size"><img src="react.jpg" alt="React 아이콘"></div>
+            <div class="skill-text-block"><h4>React</h4><p>컴포넌트 기반 SPA 설계 및 상태 관리 구현이 가능합니다.</p></div>
+          </article>
+
+          <article class="skill-card skill-row">
+            <div class="photo-size"><img src="next.png" alt="Next.js 아이콘"></div>
+            <div class="skill-text-block"><h4>Next.js</h4><p>SSR/SSG 활용한 SEO 최적화된 웹 앱 개발 경험이 있습니다.</p></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="skills-group fade-up">
+        <h3 class="skills-title">TOOLS</h3>
+
+        <div class="skills-grid">
+          <article class="skill-card skill-row">
+            <div class="photo-size"><img src="git.png" alt="Git 아이콘"></div>
+            <div class="skill-text-block"><h4>Git & Github</h4><p>협업을 위한 브랜치 전략과 버전 관리를 수행합니다.</p></div>
+          </article>
+
+          <article class="skill-card skill-row">
+            <div class="photo-size"><img src="aws.png" alt="AWS 아이콘"></div>
+            <div class="skill-text-block"><h4>AWS</h4><p>S3 기반 정적 호스팅 및 기본적인 배포 환경 구성.</p></div>
+          </article>
+
+          <article class="skill-card skill-row">
+            <div class="photo-size"><img src="figma.png" alt="Figma 아이콘"></div>
+            <div class="skill-text-block"><h4>Figma</h4><p>UI 구성 및 프로토타입 제작 경험이 있습니다.</p></div>
+          </article>
+
+          <article class="skill-card skill-row">
+            <div class="photo-size"><img src="notion.png" alt="Notion 아이콘"></div>
+            <div class="skill-text-block"><h4>Notion</h4><p>기록·문서화·프로젝트 정리를 효율적으로 수행합니다.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-projects fade-up">
+      <div class="section-title-row">
+        <span class="section-title-en">PROJECT</span>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card fade-up">
+          <div class="project-thumbnail" style="background-image: url('프로젝트1.JPG');"></div>
+
+          <h3 class="project-name">AI를 활용한 나만의 동물</h3>
+          <p class="project-type">팀 프로젝트</p>
+          <p class="project-desc">챗봇과 대화 앱</p>
+          
+        </article>
+
+        <article class="project-card fade-up">
+          <div class="project-thumbnail" style="background-image: url('프로젝트2.JPG');"></div>
+
+          <h3 class="project-name">미식축구 정복하기</h3>
+          <p class="project-type">개인 프로젝트</p>
+          <p class="project-desc">미식축구 정보 사이트</p>
+        
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="section section-resume fade-up">
+      <div class="section-title-row">
+        
+      </div>
+
+      <div class="resume-box">
+        <h2 class="resume-title">이력서</h2>
+        <img src="이력서.jpg" class="resume-img" alt="이력서 이미지">
+      </div>
+    </section>
+
+    <section id="coverletter" class="section section-coverletter fade-up">
+
+      <div class="section-title-row">
+       
+      </div>
+
+      <div class="coverletter-box">
+        <h2 class="coverletter-title">자기소개서</h2>
+         <img src="자소서.jpg" class="resume-img" alt="이력서 이미지">
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    });
+    document.querySelectorAll(".fade-up").forEach((el) => observer.observe(el));
+  </script>
+  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    });
+    document.querySelectorAll(".fade-up").forEach(function (el) {
+      observer.observe(el);
+    });
+  });
+
+  function printAll() {
+    const resumeImg = document.querySelector("#resume img");
+    const coverImg = document.querySelector("#coverletter img");
+
+    if (!resumeImg || !coverImg) {
+      alert("이력서/자기소개서 이미지를 찾을 수 없습니다.");
+      return;
+    }
+
+    const resumeSrc = resumeImg.getAttribute("src");
+    const coverSrc = coverImg.getAttribute("src");
+
+    const printWindow = window.open("", "_blank");
+    if (!printWindow) {
+      alert("팝업이 차단되었습니다. 팝업을 허용해주세요.");
+      return;
+    }
+
+    printWindow.document.open();
+    printWindow.document.write(`
+      <!DOCTYPE html>
+      <html lang="ko">
+      <head>
+        <meta charset="UTF-8" />
+        <title>Print</title>
+        <style>
+          @page { size: A4; margin: 0; }
+          body {
+            margin: 0;
+            font-family: "Poppins", "Noto Sans KR", sans-serif;
+          }
+          .page {
+            box-sizing: border-box;
+            width: 210mm;
+            height: 297mm;
+            padding: 20mm 15mm;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            page-break-after: always;
+          }
+          .page:last-child { page-break-after: auto; }
+          h2 {
+            align-self: flex-start;
+            margin: 0 0 12mm 0;
+            font-size: 18px;
+          }
+          img {
+            max-width: 100%;
+            max-height: calc(100% - 20mm);
+            object-fit: contain;
+            display: block;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="page">
+          <h2>이력서</h2>
+          <img src="${resumeSrc}">
+        </div>
+        <div class="page">
+          <h2>자기소개서</h2>
+          <img src="${coverSrc}">
+        </div>
+      </body>
+      </html>
+    `);
+    printWindow.document.close();
+
+    setTimeout(function () {
+      printWindow.focus();
+      printWindow.print();
+    }, 400);
+  }
+</script>
+
+
+
+</body>
+</html>
